@@ -5,10 +5,10 @@ const waktu = () => {
   let format = `${date.getHours()}:${date.getMinutes()}`;
   // console.log(date);
   // console.log(format);
-  jam.innerText = format;
+  jam.innerHTML = `<h1>${format}</h1>`;
   console.log(format);
 
-  if (format >= "18:50" && format <= "00:00") {
+  if (format >= "18:50" && format <= "23:59") {
     keterangan.innerHTML = `<h1>Sholat isyak</h1>`;
   } else if (format >= "00:01" && format <= "03:30") {
     keterangan.innerHTML = `<h1>Sholat isyak</h1>`;

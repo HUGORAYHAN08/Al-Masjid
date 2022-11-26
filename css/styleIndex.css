@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manjari&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
 :root{
   --warfirst:#F05454;
   --warsecond:#30475E;
@@ -13,10 +17,7 @@
   margin: 0;
 }
 
-/*  */
-/* Halaman Main */
-/*  */
-
+/* container soswmed dan jam */
 .container-sosmet{
   padding-top: 10px;
   display: flex;
@@ -34,7 +35,11 @@
 }
 .container-waktu{
   display: flex;
-  padding: 10px 0;
+  padding: 10px 5px;
+  background-color: var(--wartrid);
+  border-radius: 25px;
+  color: white;
+  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
 }
 .container-waktu #jam,#keterangan{
   margin: 0 10px;
@@ -43,15 +48,26 @@
   display: flex;
   align-items: center;
 }
+#jam h1{
+  font-family: 'Secular One', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+}
+#keterangan h1{
+  font-family: 'Secular One', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+}
 /* container navbar */
 .container-navbar{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 10%;
+  padding: 10px 10%;
   background-color: var(--warfourt);
 }
 .container-navbar h2{
+  font-size: 20px;
   color: var(--warfirst);
   font-family: 'Secular One', sans-serif;
   text-shadow: 2px 2px 2px #222831 ;
@@ -63,6 +79,31 @@ nav a{
   font-family: 'Signika', sans-serif;
   font-weight:400;
 }
+
+/* container page informasi */
+.page{
+  position: absolute;
+  width: 50%;
+  margin: 20px 0 30px 0;
+  padding: 15px 30px 15px 15%;  
+  background-color: var(--warsecond);
+  border-radius: 0 100px 100px 0;
+  border-bottom: 2px solid #F05454;
+  border-right: 2px solid #F05454;
+  box-shadow: 0 5px 10px 2px rgba(247, 48, 48, 0.705);
+} 
+.page h1{
+  font-size: 25px;
+  color: var(--warfourt);
+  font-family: 'Signika', sans-serif;
+  font-weight: bold;
+}
+
+
+/*  */
+/* Halaman Index */
+/*  */
+
 .container-cover{
   height: 90vh;
   display: flex;
@@ -89,7 +130,7 @@ nav a{
 
 /* main main */
 
-main{
+#main-Index{
   display: flex;
   justify-content: center;
 }
@@ -165,9 +206,8 @@ main{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  /* align-items: center; */
   background-color: #EFF5F5;
-  padding: 10px 0;
+  padding: 30px 0 ;
 }
 .footer-masjid img{
   width: 100px;
@@ -211,16 +251,20 @@ form{
 /* Halaman Tentang Kami */
 /*  */
 
+/* Slide */
 .mySlides {display: none;}
-img {vertical-align: middle;}
-
+img {vertical-align: middle;
+}
 .container-slide{
   display: flex;
   justify-content: center;
+  padding: 120px 0 30px;
+  background-image: url("../img/Background.png");
+  background-size: cover;
 }
 .wrapper-Slide{
-  width:700px;
-  height:600px;
+  width: 650px;
+  height: 500px;
 }
 /* Slideshow container */
 .slideshow-container {
@@ -266,6 +310,9 @@ img {vertical-align: middle;}
   animation-name: fade;
   animation-duration: 1.5s;
 }
+.container-dot{
+  text-align: center;
+}
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
@@ -275,9 +322,81 @@ img {vertical-align: middle;}
   .text {font-size: 11px}
 }
 
-.page{
-  margin: 20px 50% 20px 0;
-  padding: 15px 30px; 
+/* container article */
+.container-article{
+  padding-top: 60px;
   background-color: var(--warsecond);
-  border-radius: 0 100px 100px 0;
+}
+.wrapper-masjid{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+.container-sejarah{
+  display: flex;
+  align-items: flex-start;
+}
+.container-article h1{
+  width: 300px;
+  padding: 10px;
+  text-align: center;
+  color: var(--warsecond);
+  background-color: var(--warfourt);
+  border-radius: 20px;
+  box-shadow: 0 2px 4px 1px #EFF5F5;
+}
+.wrapper-sejarah{
+  margin: 0 35px 0 20px;
+  padding-bottom: 70px;
+  text-align: justify;
+}
+.wrapper-sejarah p{
+  text-indent: 5em;
+  color:var(--warfourt);
+  font-family: 'Roboto', sans-serif;
+}
+/* container-video */
+.container-video{
+  padding: 0 30px 30px;
+}
+.container-video iframe{
+  width: 600px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+/*  */
+/* Halaman Jadwal Sholat */
+/*  */
+
+.container-jadwal{
+  padding: 120px 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../img/BackgroundJadwal.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container-jadwal h1{
+  margin: 20px 0;
+  font-size: 40px;
+  font-family: 'Secular One', sans-serif;
+}
+table, th,td{
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+th{
+  background-color: var(--warsecond);
+  color: var(--warfourt);
+}
+td{
+  font-size: 18px;
+  font-weight: bold;
+  background-color: var(--warfourt);
+  color: var(--warsecond);
 }
