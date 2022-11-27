@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+/* font-family: 'Signika', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+/* font-family: 'Secular One', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Manjari&display=swap');
+/* font-family: 'Manjari', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-
+/* font-family: 'Roboto', sans-serif; */
 
 :root{
   --warfirst:#F05454;
@@ -73,7 +75,13 @@
   font-family: 'Secular One', sans-serif;
   text-shadow: 2px 2px 2px #222831 ;
 }
-nav a{
+nav ul{
+  display: flex;
+}
+nav li{
+  list-style: none;
+}
+nav li a{
   margin: 0 10px;
   font-size: 15px;
   text-decoration: none;
@@ -342,6 +350,7 @@ img {vertical-align: middle;
 .container-article h1{
   width: 300px;
   padding: 10px;
+  font-size: 30px;
   text-align: center;
   color: var(--warsecond);
   background-color: var(--warfourt);
@@ -402,4 +411,68 @@ td{
   font-weight: bold;
   background-color: var(--warfourt);
   color: var(--warsecond);
+}
+
+/*  */
+/* Halaman Agenda */
+/*  */
+
+#main-agenda{
+  padding-bottom: 30px;
+  background-image: url("../img/bacgroundAgenda.jpg");
+}
+
+.contaniner-Agenda{
+  padding-top: 120px;
+  padding-bottom: 30px;
+}
+.item-agenda{
+  display: flex;
+  padding: 10px;
+  margin: 15px 30% 10px 20px;
+  border-radius: 10px;
+  border-bottom: 3px solid black;
+  border-right: 2px solid black;
+  box-shadow: 0 7px 10px 2px rgba(0,0,0,0.5);
+  background-color: white;
+}
+.item-agenda img{
+  width: 400px;
+}
+.wrapper-agenda{
+  margin-left: 20px;
+}
+.item-agenda h2{
+  font-family: 'Signika', sans-serif;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.item-agenda p{
+  margin-top: 5px;
+  font-family: 'Manjari', sans-serif;
+}
+.item-agenda button{
+  margin: 15px 0 ;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  background-color: var(--warfirst);
+  border: none;
+  border-radius: 5px;
+}
+.item-agenda button:hover{
+  background-color: #fc7e7e;
+}
+.item-more{
+  display: flex;
+  justify-content: center;
+}
+.item-more a{
+  text-decoration: none;
+  color: var(--warfourt);
+  width: 100px;
+  padding: 10px;
+  text-align: center;
+  background-color: var(--wartrid);
+  border-radius: 10px;
 }
