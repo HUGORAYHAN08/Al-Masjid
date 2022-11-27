@@ -70,10 +70,15 @@
   background-color: var(--warfourt);
 }
 .container-navbar h2{
-  font-size: 20px;
+  font-size: 30px;
   color: var(--warfirst);
   font-family: 'Secular One', sans-serif;
   text-shadow: 2px 2px 2px #222831 ;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 nav ul{
   display: flex;
@@ -158,6 +163,7 @@ nav li a{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .container-kegiatan i{
   padding: 30px;
@@ -185,8 +191,8 @@ nav li a{
 .container-Ulasan h1{
   text-align: center;
   font-size: 40px;
-  font-family: 'Manjari', sans-serif;
-  font-weight: 500px;
+  font-weight: bold;
+  font-family: 'Signika', sans-serif;
 }
 .wrapper-ulasan{
   display: flex;
@@ -207,22 +213,32 @@ nav li a{
   border-bottom: 2px solid white;
   margin-bottom: 10px;
   padding-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* footer */
-
 .data-Footer{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
   background-color: #EFF5F5;
   padding: 30px 0 ;
 }
 .footer-masjid img{
   width: 100px;
 }
+.footer-masjid p{
+  font-family: 'Roboto', sans-serif;
+}
+.container-alamat h2,.container-form h2{
+  font-family: 'Manjari', sans-serif;
+}
 .container-alamat{
   width: 300px;
+}
+.container-alamat p{
+  font-family: 'Roboto', sans-serif;
 }
 form{
   display: flex;
@@ -342,6 +358,7 @@ img {vertical-align: middle;
   display: flex;
   justify-content: center;
   margin-bottom: 70px;
+  
 }
 .container-sejarah{
   display: flex;
@@ -352,10 +369,14 @@ img {vertical-align: middle;
   padding: 10px;
   font-size: 30px;
   text-align: center;
+  font-family: 'Secular One', sans-serif;
   color: var(--warsecond);
   background-color: var(--warfourt);
   border-radius: 20px;
-  box-shadow: 0 2px 4px 1px #EFF5F5;
+  border-bottom: 3px solid black;
+  border-right: 2px solid black;
+  box-shadow: 0 7px 10px 2px rgba(0,0,0,0.5);
+ 
 }
 .wrapper-sejarah{
   margin: 0 35px 0 20px;
@@ -475,4 +496,131 @@ td{
   text-align: center;
   background-color: var(--wartrid);
   border-radius: 10px;
+}
+
+/*  */
+/* Responsif all Page */
+/*  */
+
+@media(max-width:800px){
+   
+  /*  */
+  /* Header */
+  /*  */
+  
+  /* container jam */
+  .container-sosmet{
+    flex-direction:column-reverse;  
+    margin: 5px;  
+  }
+  .wrapper-sosmet{
+    margin-top: 10px;
+  }
+
+  /* navbar */
+  .container-navbar{
+    flex-direction: column;
+  }
+  /*  */
+  /* Main Index */
+  /*  */
+  .container-cover{
+    height: 85vh;
+    padding-top: 0;
+    padding-bottom: 0;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content:start;
+    background-size: cover;
+  }
+  /* .container-cover .cover img{
+    width: 200px;
+  } */
+  .container-cover .kalimat{
+    width: 100%;
+  }
+  .container-cover .kalimat h1{
+    font-size: 38px;
+    text-align: center;
+  }
+  .container-kegiatan{
+    text-align: center;
+    width: 300px;
+    height: 35vh;
+    justify-content: space-between;
+  }
+  .item-kegiatan{
+    margin:10px;
+  }
+  .item-kegiatan .fa-solid{
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .item-kegiatan h1{
+    font-size: 15px
+  }
+  .container-Ulasan h1{
+    font-size: 35px;
+  }
+  .wrapper-ulasan{
+    flex-direction: column;
+    align-items: center;
+  }
+  .item-ulasan{
+    width: 80%;
+    margin: 5px 0;
+  }
+  .item-ulasan p{
+    font-size: 12px;
+  }
+  .item-ulasan h2{
+    font-size: 20px
+  }
+
+  /* footer */
+  .footer-masjid{
+    margin: 10px 0;
+  }
+  .container-alamat{
+    margin: 15px 0;
+  }
+  .container-form{
+    margin-top: 10px;
+  }
+
+  /*  */
+  /* Halaman About */
+  /*  */
+  .page h1{
+    font-size: 20px;
+  }
+  .wrapper-Slide{
+    width: 350px;
+    height: auto;
+  }
+  .wrapper-masjid{
+    margin-bottom: 30px ;
+  }
+  .wrapper-masjid h1{
+    font-size: 25px;
+  }
+  .container-sejarah{
+    flex-direction: column-reverse;
+  }
+  .wrapper-sejarah{
+    padding-bottom: 30px;
+  }
+  .wrapper-sejarah p{
+    font-size: 12px;
+    text-indent: 2em;
+  }
+  .container-video{
+    padding: 0 20px 10px;
+  }
+  .container-video iframe{
+    width: 350px;
+    height: 250px;
+  }
 }
