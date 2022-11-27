@@ -14,7 +14,7 @@ const waktu = () => {
 
   let format = AddHours + ":" + AddMinuts;
   jam.innerHTML = `<h1>${format}</h1>`;
-  console.log(format);
+  // console.log(format);
 
   if (format >= "18:50" && format <= "23:59") {
     keterangan.innerHTML = `<h1>Sholat isyak</h1>`;
