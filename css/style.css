@@ -36,6 +36,7 @@
 .container-waktu{
   display: flex;
   padding: 10px 5px;
+  margin: 5px 0;
   background-color: var(--wartrid);
   border-radius: 25px;
   color: white;
@@ -259,8 +260,10 @@ img {vertical-align: middle;
   display: flex;
   justify-content: center;
   padding: 120px 0 30px;
-  background-image: url("../img/Background.png");
-  background-size: cover;
+  background-image: url("../img/backgroundAbout.png");
+  background-size:cover;
+  /* background-size: cover; */
+  background-repeat: no-repeat;
 }
 .wrapper-Slide{
   width: 650px;

@@ -2,9 +2,17 @@ const waktu = () => {
   const jam = document.getElementById("jam");
   const keterangan = document.getElementById("keterangan");
   let date = new Date();
-  let format = `${date.getHours()}:${date.getMinutes()}`;
-  // console.log(date);
-  // console.log(format);
+
+  const addZero = (D) => {
+    if (D < 10) {
+      D = "0" + D;
+    }
+    return D;
+  };
+  let AddHours = addZero(date.getHours());
+  let AddMinuts = addZero(date.getMinutes());
+
+  let format = AddHours + ":" + AddMinuts;
   jam.innerHTML = `<h1>${format}</h1>`;
   console.log(format);
 
@@ -26,14 +34,13 @@ const waktu = () => {
 };
 setInterval(waktu, 1000);
 
+// SlideShow
 let slideIndex = 0;
-showSlides();
 
 function showSlides() {
-  let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
+  for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
   slideIndex++;
@@ -41,9 +48,10 @@ function showSlides() {
     slideIndex = 1;
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].className = dots[i].className.replace("active", "");
   }
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
-  setTimeout(showSlides, 3000); // Change image every 2 seconds
+  setTimeout(showSlides, 3000);
 }
+showSlides();
