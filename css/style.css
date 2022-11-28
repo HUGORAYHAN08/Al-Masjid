@@ -35,6 +35,19 @@
   border: 2px solid black;
   border-radius: 50%;
 }
+
+.wrapper-sosmet .fa-facebook:hover{
+  font-size: 25px;
+  color: #3b5998;
+}
+.wrapper-sosmet .fa-twitter:hover{
+  font-size: 25px;
+  color: #1da1f2;
+}
+.wrapper-sosmet .fa-youtube:hover{
+  font-size: 25px;
+  color: #ff0000;
+}
 .wrapper-sosmet .fa-brands{
   font-size: 20px;
 }
@@ -96,7 +109,10 @@ nav li a{
   text-decoration: none;
   font-family: 'Signika', sans-serif;
   font-weight:400;
+  color: var(--wartrid);
+  font-weight: normal;
 }
+
 nav li a:hover{
   padding: 5px 10px;
   color: var(--warfourt);
