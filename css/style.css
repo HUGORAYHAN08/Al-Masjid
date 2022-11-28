@@ -439,11 +439,21 @@ img {vertical-align: middle;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.container-jadwal h1{
-  margin: 20px 0;
+.wrapper-judulJadwal{
+    margin: 20px 0;
+    text-align: center;
+}
+.wrapper-judulJadwal h1{
   font-size: 40px;
   font-family: 'Secular One', sans-serif;
 }
+.wrapper-judulJadwal h3{
+  font-size: 30px;
+  font-weight: normal;
+  font-family: 'Secular One', sans-serif;
+
+}
+
 table, th,td{
   border: 2px solid black;
   border-collapse: collapse;
