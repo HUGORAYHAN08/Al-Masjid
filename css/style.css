@@ -35,6 +35,9 @@
   border: 2px solid black;
   border-radius: 50%;
 }
+.wrapper-sosmet .fa-brands{
+  font-size: 20px;
+}
 .container-waktu{
   display: flex;
   padding: 10px 5px;
