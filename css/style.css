@@ -392,6 +392,7 @@ img {vertical-align: middle;
   text-align: justify;
 }
 .wrapper-sejarah p{
+  font-size: 15px;
   text-indent: 5em;
   color:var(--warfourt);
   font-family: 'Roboto', sans-serif;
